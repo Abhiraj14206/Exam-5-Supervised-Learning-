@@ -26,7 +26,7 @@ The dataset contains multiple input features and one target variable used for cl
 
 ### Dataset Preview
 
-![Dataset Preview](screenshots/dataset_preview.png)
+![Dataset Preview](screenshots/dataset_preview.png.jpeg)
 
 ---
 
@@ -63,135 +63,55 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 ```
 
+### Screenshot
+
+![Import Libraries](screenshots/import_libraries.png.jpeg)
+
 ---
 
 # 🔄 Project Workflow
 
-## Step 1: Import Required Libraries
-
-All necessary libraries were imported for data manipulation, visualization, preprocessing, and machine learning.
-
-### Screenshot
-
-![Import Libraries](screenshots/import_libraries.png)
-
----
-
-## Step 2: Load Dataset
+## Step 1: Load Dataset
 
 The dataset was loaded using Pandas and stored in a DataFrame.
 
 ### Screenshot
 
-![Load Dataset](screenshots/load_dataset.png)
+![Load Dataset](screenshots/load_dataset.png.jpeg)
 
 ---
 
-## Step 3: Dataset Exploration
+## Step 2: Data Preprocessing
 
-Performed exploratory analysis including:
+The dataset was explored and prepared for machine learning by:
 
-- Dataset Shape
-- Data Types
-- Null Values
-- Statistical Summary
-
-### Screenshot
-
-![Dataset Information](screenshots/dataset_info.png)
+- Checking dataset structure
+- Handling missing values
+- Encoding categorical variables
+- Scaling numerical features
 
 ---
 
-## Step 4: Missing Value Handling
-
-Missing values were identified and handled using SimpleImputer.
-
-### Screenshot
-
-![Missing Values](screenshots/missing_values.png)
-
----
-
-## Step 5: Data Encoding
-
-Categorical features were converted into numerical values using Label Encoding.
-
-### Screenshot
-
-![Label Encoding](screenshots/label_encoding.png)
-
----
-
-## Step 6: Feature Scaling
-
-StandardScaler was used to normalize numerical features.
-
-### Screenshot
-
-![Feature Scaling](screenshots/feature_scaling.png)
-
----
-
-## Step 7: Feature Selection
-
-The dataset was divided into:
-
-- Independent Variables (X)
-- Target Variable (y)
-
-### Screenshot
-
-![Feature Selection](screenshots/feature_selection.png)
-
----
-
-## Step 8: Train-Test Split
-
-The dataset was divided into training and testing sets.
-
-### Screenshot
-
-![Train Test Split](screenshots/train_test_split.png)
-
----
-
-## Step 9: Model Training
+## Step 3: Model Training
 
 The following Machine Learning models were trained:
 
-### Logistic Regression
-
-Used for binary classification and prediction.
-
-### Decision Tree Classifier
-
-Used to create a tree-based classification model.
+- Logistic Regression
+- Decision Tree Classifier
 
 ### Screenshot
 
-![Model Training](screenshots/model_training.png)
+![Model Training](screenshots/model_training.png.jpeg)
 
 ---
 
-## Step 10: Model Prediction
+## Step 4: Model Evaluation
 
-Predictions were generated using the trained model.
-
-### Screenshot
-
-![Prediction Output](screenshots/predictions.png)
-
----
-
-## Step 11: Model Evaluation
-
-The model performance was evaluated using:
-
-- Accuracy Score
+The trained model was evaluated using Accuracy Score.
 
 ### Screenshot
 
-![Accuracy Score](screenshots/accuracy_score.png)
+![Accuracy Score](screenshots/accuracy_score.png.jpeg)
 
 ---
 
@@ -199,9 +119,9 @@ The model performance was evaluated using:
 
 The trained model successfully predicts the target outcome with good classification performance.
 
-### Final Result Screenshot
+### Final Output
 
-![Final Output](screenshots/final_output.png)
+![Final Output](screenshots/final_output.png.jpeg)
 
 ---
 
@@ -209,23 +129,19 @@ The trained model successfully predicts the target outcome with good classificat
 
 ```text
 Dataset
-   ↓
-Data Exploration
-   ↓
-Missing Value Treatment
-   ↓
-Label Encoding
-   ↓
-Feature Scaling
-   ↓
-Feature Selection
-   ↓
+      ↓
+Load Dataset
+      ↓
+Data Preprocessing
+      ↓
+Feature Engineering
+      ↓
 Train-Test Split
-   ↓
+      ↓
 Model Training
-   ↓
+      ↓
 Prediction
-   ↓
+      ↓
 Accuracy Evaluation
 ```
 
@@ -241,26 +157,19 @@ Smart_Outcome_Predictor/
 ├── README.md
 │
 └── screenshots/
-    ├── dataset_preview.png
-    ├── import_libraries.png
-    ├── load_dataset.png
-    ├── dataset_info.png
-    ├── missing_values.png
-    ├── label_encoding.png
-    ├── feature_scaling.png
-    ├── feature_selection.png
-    ├── train_test_split.png
-    ├── model_training.png
-    ├── predictions.png
-    ├── accuracy_score.png
-    └── final_output.png
+    ├── accuracy_score.png.jpeg
+    ├── dataset_preview.png.jpeg
+    ├── final_output.png.jpeg
+    ├── import_libraries.png.jpeg
+    ├── load_dataset.png.jpeg
+    └── model_training.png.jpeg
 ```
 
 ---
 
 # ✅ Conclusion
 
-This project demonstrates a complete Machine Learning classification workflow. The dataset was successfully preprocessed, transformed, and used to train classification models. The performance was evaluated using accuracy metrics, and the model successfully predicts outcomes based on the given input features.
+This project demonstrates a complete Machine Learning classification workflow. The dataset was successfully preprocessed and used to train classification models. The model performance was evaluated using the Accuracy Score, and it successfully predicts outcomes based on the given input data.
 
 ---
 
